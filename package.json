@@ -1,6 +1,6 @@
 {
   "name": "codeworks-weekly-assessment-5",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Codeworks weekly assessment for students",
   "main": "index.js",
   "scripts": {

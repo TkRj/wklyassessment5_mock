@@ -8,13 +8,13 @@ Read through this document before beginning with the assessment.
 
 ## Back End
 
-Create a Koa back end in the  `./server` folder, following [this documentation](http://docs.codemocracy.apiary.io/).
+Create a Koa backend in the `./server` folder, using [this documentation](http://docs.codemocracy.apiary.io/) as a guide on how to format your endpoints and data models. You can also use this as a mock backend if you want to start on the frontend before connecting client and server.
 
 We encourage you to use MongoDB with Mongoose for the data layer, but feel free to use your preferred database and ORM.
 
 ## Front End
 
-Run `ng new codemocracy --directory client` to set up a new Angular app in the `./client` folder.  Use the Angular CLI for creating every component, service, pipe or anything else that you need.
+Run `ng new codemocracy --directory client` to set up a new Angular app in the `./client` folder. Use the Angular CLI for creating every component, service, pipe or anything else that you need.
 
 Keep in mind that the API documentation provided in the back-end section offers a mock API, so you can use it to create the front-end before you start working with the server if you want.
 
