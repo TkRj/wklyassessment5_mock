@@ -35,8 +35,10 @@ function removeSolutions () {
 // Prepare for distribution to students
 function updateConfigForSlave (done) {
   let npmConfig = require('./package.json');
-  npmConfig.scripts.install = 'cd client && npm i .';
+  npmConfig.scripts.install = 'npm run install:client && npm run install:server';
   npmConfig.scripts.lint = 'cd client && ng lint';
+  npmConfig.scripts['install:client'] = 'if [[ -d "client" && -e "client/package.json" ]]; then cd client && npm i . ; fi;';
+  npmConfig.scripts['install:server'] = 'if [[ -d "server" && -e "server/package.json" ]]; then cd server && npm i . ; fi;';
   npmConfig.husky = { 
     'hooks': {
       'pre-commit': 'npm run lint'
