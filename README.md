@@ -32,10 +32,11 @@ Here you have an example of what the app should look like:
   - If the text field is empty an error should be shown.
   - Once the topic is stored on the server, it should be automatically added at the bottom of the list.
 - Topics are deleted by clicking on the trash icon on the right.
-- When the user clicks the up/down arrow, the topic’s score is updated and the list is sorted with the new scores.
+- When the user clicks the up/down arrow, the topic’s score is updated.
 
 ## Extra credits
 
+- Make it so that when the user updates the score of a topic, the list is automatically rearranged, if necessary, to stay sorted by score.
 - Add a loader (spinner, etc.) for every API request.
 - Make it responsive.
 - Write unit tests for the back-end part.
