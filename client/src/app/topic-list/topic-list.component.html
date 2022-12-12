@@ -1,0 +1,29 @@
+<div class="new-topic">
+  <input type="text" [(ngModel)]="newtopic">
+  <button (click)="postTopic()">Add Topic</button>
+</div>
+<div>
+  <div *ngFor="let topic of topics" class="list-item">
+    <div class="topic-score">
+      <button (click)="upvoteTopic(topic)">upvote</button>
+      {{topic.score}}
+      <button (click)="upvoteTopic(topic)">downvote</button>
+    </div>
+    <div class="topic-desc">
+      <div class="title">
+        <div></div>
+        <div>{{topic.title}}</div>
+        <div></div>
+      </div>
+      <div class="timestamp">
+        CREATED ON 
+        <div class="date">
+          {{topic.published_at | date: 'dd MMM'}}
+        </div>
+      </div>
+    </div>
+    <div class="topic-delete">
+      <button (click)="deleteTopic(topic)">delete</button>
+    </div>
+  </div>
+</div>

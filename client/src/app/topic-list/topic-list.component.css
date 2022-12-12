@@ -1,0 +1,50 @@
+.new-topic{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.list-item {
+  background-color: white;
+  border: 1px gray;
+  margin: 15px 0;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.topic-score{
+  width: 10%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topic-desc{
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+.title {
+  font-size: large;
+  color: black;
+  font-weight: bold;
+}
+
+.timestamp{
+  margin-top: 8px;
+  font-size: small;
+  color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.date{
+  margin-left: 5px;
+  color: black;
+  font-weight: bold;
+}

@@ -1,0 +1,10 @@
+.container{
+  height: 100%;
+  width: 100%;
+  padding: 5% 10%;
+}
+.add-topic-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
