@@ -40,3 +40,4 @@ Here you have an example of what the app should look like:
 - Add a loader (spinner, etc.) for every API request.
 - Make it responsive.
 - Write unit tests for the back-end part.
+# wklyassessment5_mock
