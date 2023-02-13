@@ -1,0 +1,24 @@
+<div class="topic-container">
+  <div *ngIf="topic" class="topic-desc">
+    <div class="title">
+      <div></div>
+      <div>{{ topic.title }}</div>
+      <div></div>
+    </div>
+    <div class="timestamp">
+      CREATED ON
+      <div class="date">
+        {{ topic.published_at | date : "dd MMM" }}
+      </div>
+    </div>
+    <div *ngIf="topic" class="topic-delete">
+      <button (click)="deleteTopic(topic)">Remove</button>
+    </div>
+  </div>
+  <div *ngIf="topic" class="topic-score">
+    <button (click)="upvoteTopic(topic)">upvote</button>
+    {{ topic.score }}
+    <button (click)="downvoteTopic(topic)">downvote</button>
+  </div>
+
+</div>
